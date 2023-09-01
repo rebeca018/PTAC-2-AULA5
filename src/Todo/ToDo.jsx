@@ -16,9 +16,16 @@ export default function ToDo() {
         setAtividade("");
    };
 
-   const apagar = (e) => {
-        e.preventDefault();
-        lista.filter(id)
+   const apagar = (id) => {
+        /*setLista(lista.filter((ativ) => (ativ.id !== id ? lista : null)));*/
+        const auxLista = [];
+        lista.map((lista) => {
+            if (lista.id !== id){
+                auxLista.push(Lista);
+            }
+        });
+        setLista(auxLista);
+        
    }
 
 
