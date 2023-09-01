@@ -16,6 +16,11 @@ export default function ToDo() {
         setAtividade("");
    };
 
+   const apagar = (e) => {
+        e.preventDefault();
+        lista.filter(id)
+   }
+
 
     return (
         <div>
@@ -28,7 +33,7 @@ export default function ToDo() {
                 <input value={atividade} type="text"
                 onChange={(e)=>{ setAtividade(e.target.value)}} />
                 <button>ADD</button>
-                <button ></button>
+                <button>EXCLUIR</button>
             </form>
 
             {lista.map((ativ)=>
