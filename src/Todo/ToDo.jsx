@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 export default function ToDo() {
    //const [atividade, setAtividade] = useState("");
    const [titulo, setTitulo] = useState("");
+   const [autor, setAutor] = useState("");
    const [lista, setLista] = useState([]);
    const [id, setId] = useState(1);
 
@@ -36,11 +37,12 @@ export default function ToDo() {
             <h1>Lista de Atividades</h1>
 
             <p>{titulo}</p>
+            <p>{autor}</p>
 
             <form onSubmit={salvar}>
                 <input value={titulo} type="text"
                 onChange={(e)=>{ setAtividade(e.target.value)}} />
-                <input value={atividade} type="text"
+                <input value={autor} type="text"
                 onChange={(e)=>{ setAtividade(e.target.value)}} />
                 <input value={atividade} type="text"
                 onChange={(e)=>{ setAtividade(e.target.value)}} />
