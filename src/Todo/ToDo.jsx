@@ -3,21 +3,24 @@ import { Link } from "react-router-dom";
 
 export default function ToDo() {
    //const [atividade, setAtividade] = useState("");
+   const [imagem, setImagem] = useState("")
    const [titulo, setTitulo] = useState("");
    const [autor, setAutor] = useState("");
-   const [preco, setPreco] = useState("")
+   const [preco, setPreco] = useState("");
    const [lista, setLista] = useState([]);
    const [id, setId] = useState(1);
 
    const salvar = (e) => {
         e.preventDefault();
         setLista([...lista, {
+            imagem: imagem,
             titulo: titulo,
             autor: autor,
             preco: preco,
             id: id
         }]);
         setId(id + 1);
+        setImagem("");
         setTitulo("");
         setAutor("");
         setPreco("");
@@ -46,8 +49,11 @@ export default function ToDo() {
 
             <form onSubmit={salvar}>
 
-                <p>Título</p>
+                <p>Imagem</p>
+                <input value={imagem} type="text"
+                onChange={(e)=>{ setImagem(e.target.value)}} />
                 
+                <p>Título</p>
                 <input value={titulo} type="text"
                 onChange={(e)=>{ setTitulo(e.target.value)}} />
 
@@ -63,6 +69,7 @@ export default function ToDo() {
 
             {lista.map((ativ)=>
             <ul key={ativ.id}>
+                <li>{ativ.imagem}</li>
                 <li>{ativ.titulo}</li>
                 <li>{ativ.autor}</li>
                 <li>{ativ.preco}</li>
