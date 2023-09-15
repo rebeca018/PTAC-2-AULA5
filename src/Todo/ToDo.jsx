@@ -16,7 +16,9 @@ export default function ToDo() {
             id: id
         }]);
         setId(id + 1);
-        setAtividade("");
+        setTitulo("");
+        setAutor("");
+        setPreco("");
    };
 
    const apagar = (id) => {
