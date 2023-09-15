@@ -39,7 +39,7 @@ export default function ToDo() {
     return (
         <div>
             <Link to="/">home</Link>
-            <h1>Lista de Atividades</h1>
+            <h1>Lista de Livros</h1>
 
             <p>{titulo}</p>
             <p>{autor}</p>
