@@ -41,15 +41,21 @@ export default function ToDo() {
             <Link to="/">home</Link>
             <h1>Lista de Livros</h1>
 
-            <p>{titulo}</p>
-            <p>{autor}</p>
-            <p>{preco}</p>
+        
+            
 
             <form onSubmit={salvar}>
+
+                <p>Título</p>
+                
                 <input value={titulo} type="text"
                 onChange={(e)=>{ setTitulo(e.target.value)}} />
+
+                <p>Autor</p>
                 <input value={autor} type="text"
                 onChange={(e)=>{ setAutor(e.target.value)}} />
+
+                <p>Preço</p>
                 <input value={preco} type="text"
                 onChange={(e)=>{ setPreco(e.target.value)}} />
                 <button>ADD</button>
