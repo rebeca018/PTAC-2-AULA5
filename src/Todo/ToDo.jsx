@@ -12,7 +12,9 @@ export default function ToDo() {
    const salvar = (e) => {
         e.preventDefault();
         setLista([...lista, {
-            atividade: atividade,
+            titulo: titulo,
+            autor: autor,
+            preco: preco,
             id: id
         }]);
         setId(id + 1);
@@ -45,11 +47,11 @@ export default function ToDo() {
 
             <form onSubmit={salvar}>
                 <input value={titulo} type="text"
-                onChange={(e)=>{ setAtividade(e.target.value)}} />
+                onChange={(e)=>{ setTitulo(e.target.value)}} />
                 <input value={autor} type="text"
-                onChange={(e)=>{ setAtividade(e.target.value)}} />
+                onChange={(e)=>{ setAutor(e.target.value)}} />
                 <input value={preco} type="text"
-                onChange={(e)=>{ setAtividade(e.target.value)}} />
+                onChange={(e)=>{ setPreco(e.target.value)}} />
                 <button>ADD</button>
             </form>
 
