@@ -5,6 +5,7 @@ export default function ToDo() {
    //const [atividade, setAtividade] = useState("");
    const [titulo, setTitulo] = useState("");
    const [autor, setAutor] = useState("");
+   const [preco, setPreco] = useState("")
    const [lista, setLista] = useState([]);
    const [id, setId] = useState(1);
 
@@ -38,13 +39,14 @@ export default function ToDo() {
 
             <p>{titulo}</p>
             <p>{autor}</p>
+            <p>{preco}</p>
 
             <form onSubmit={salvar}>
                 <input value={titulo} type="text"
                 onChange={(e)=>{ setAtividade(e.target.value)}} />
                 <input value={autor} type="text"
                 onChange={(e)=>{ setAtividade(e.target.value)}} />
-                <input value={atividade} type="text"
+                <input value={preco} type="text"
                 onChange={(e)=>{ setAtividade(e.target.value)}} />
                 <button>ADD</button>
             </form>
@@ -52,6 +54,8 @@ export default function ToDo() {
             {lista.map((ativ)=>
             <ul key={ativ.id}>
                 <li>{ativ.titulo}</li>
+                <li>{ativ.autor}</li>
+                <li>{ativ.preco}</li>
                 <button onClick={() => apagar(ativ.id)}>Remover</button>
             </ul>)}
            
