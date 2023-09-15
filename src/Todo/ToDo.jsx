@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import "./style.css";
 
 export default function ToDo() {
    //const [atividade, setAtividade] = useState("");
@@ -69,15 +70,15 @@ export default function ToDo() {
 
             {lista.map((ativ)=>
             <ul key={ativ.id}>
-                <li>{ativ.imagem}</li>
-                <li>{ativ.titulo}</li>
-                <li>{ativ.autor}</li>
-                <li>{ativ.preco}</li>
+                <div class="book-card">
+                <img src="{ativ.imagem}" class="book-card-img"></img>
+                <p class="book-card-p">{ativ.titulo}</p>
+                <p class="book-card-p">{ativ.autor}</p>
+                <p class="book-card-p">{ativ.preco}</p>
                 <button onClick={() => apagar(ativ.id)}>Remover</button>
+                </div>
             </ul>)}
            
         </div>
     );
 }
-
-//filter id diferente 
