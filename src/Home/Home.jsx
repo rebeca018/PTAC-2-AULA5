@@ -6,7 +6,7 @@ export default function Home() {
         <div>
             <img src="capa.png" alt="" />
             <div class="home">
-
+                <p class="home-tx">testando</p>
             </div>
             <Link to="/todo">todo</Link>
         </div>
