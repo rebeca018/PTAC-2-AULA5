@@ -17,6 +17,19 @@ body, html, #root{
     color: #C0A293;
 }
 
+.book-card-home {
+    text-align: left;
+    margin: 30px;
+    background-color: #C0A293;
+    border: 5px solid #C0A293;
+    display:inline-block;
+    overflow: hidden;
+    height: 340px;
+    width: 250px;
+    border-radius: 10px;
+  
+}
+
 .lista{
     margin-top: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -31,7 +44,7 @@ body, html, #root{
     border: 5px solid #C0A293;
     display:inline-block;
     overflow: hidden;
-    height: 350px;
+    height: 340px;
     width: 250px;
     border-radius: 10px;
   
@@ -57,6 +70,13 @@ body, html, #root{
     color:black;
 }
 
+.book-card-p:hover {
+    padding: 5px;
+    margin: 0;
+    font-size: 18px;
+    white-space: normal;
+}
+
 .botao{
     background-color: #C0A293;
     color: #344960;
@@ -69,6 +89,7 @@ body, html, #root{
 
 .lixinho{
     max-width: 50px; 
-    max-height: 50px; 
+    max-height: 25px; 
     background-color: #344960;
+    border-radius: 10px;
 }

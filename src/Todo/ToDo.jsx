@@ -46,7 +46,7 @@ export default function ToDo() {
     return (
         <div class="lista">
             
-            <h1 class="texto">Lista de Livros</h1>
+            <h1 class="texto">Wishlist de Livros</h1>
             <h2 class="texto">Voltar para <Link to="/">home</Link></h2>
         
             
@@ -84,7 +84,7 @@ export default function ToDo() {
                 <p class="book-card-p">{ativ.autor}</p>
                 <p class="book-card-p">{ativ.editora}</p>
                 <p class="book-card-p">R$ {ativ.preco}</p>
-                <button onClick={() => apagar(ativ.id)}>Remover</button>
+                <img src="/imagem/trash.png" alt="" class="lixinho" onClick={() => apagar(ativ.id)} />
                 </div>
             </ul>)}
            
