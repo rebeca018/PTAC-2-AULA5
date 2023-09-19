@@ -4,7 +4,10 @@ export default function Home() {
    
     return (
         <div>
-            <h1>Home</h1>
+            <img src="capa.png" alt="" />
+            <div class="home">
+
+            </div>
             <Link to="/todo">todo</Link>
         </div>
 
