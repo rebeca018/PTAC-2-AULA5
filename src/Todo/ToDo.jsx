@@ -7,6 +7,7 @@ export default function ToDo() {
    const [imagem, setImagem] = useState("")
    const [titulo, setTitulo] = useState("");
    const [autor, setAutor] = useState("");
+   const [editora, setEditora] = useState("");
    const [preco, setPreco] = useState("");
    const [lista, setLista] = useState([]);
    const [id, setId] = useState(1);
@@ -17,6 +18,7 @@ export default function ToDo() {
             imagem: imagem,
             titulo: titulo,
             autor: autor,
+            editora: editora,
             preco: preco,
             id: id
         }]);
@@ -24,6 +26,7 @@ export default function ToDo() {
         setImagem("");
         setTitulo("");
         setAutor("");
+        setEditora("");
         setPreco("");
    };
 
@@ -41,30 +44,35 @@ export default function ToDo() {
 
 
     return (
-        <div>
-            <Link to="/">home</Link>
-            <h1>Lista de Livros</h1>
-
+        <div class="lista">
+            
+            <h1 class="texto">Lista de Livros</h1>
+            <h2>Voltar para <Link to="/">home</Link></h2>
         
             
 
             <form onSubmit={salvar}>
 
-                <p>Imagem</p>
+                <p class="texto">Imagem</p>
                 <input value={imagem} type="text"
                 onChange={(e)=>{ setImagem(e.target.value)}} />
                 
-                <p>Título</p>
+                <p class="texto">Título</p>
                 <input value={titulo} type="text"
                 onChange={(e)=>{ setTitulo(e.target.value)}} />
 
-                <p>Autor</p>
+                <p class="texto">Autor</p>
                 <input value={autor} type="text"
                 onChange={(e)=>{ setAutor(e.target.value)}} />
 
-                <p>Preço</p>
+                <p class="texto">Editora</p>
+                <input value={editora} type="text"
+                onChange={(e)=>{ setEditora(e.target.value)}} />
+
+                <p class="texto">Preço</p>
                 <input value={preco} type="text"
                 onChange={(e)=>{ setPreco(e.target.value)}} />
+                <br/>
                 <button>ADD</button>
             </form>
 
@@ -74,7 +82,8 @@ export default function ToDo() {
                 <img src="{ativ.imagem}" class="book-card-img"></img>
                 <p class="book-card-p">{ativ.titulo}</p>
                 <p class="book-card-p">{ativ.autor}</p>
-                <p class="book-card-p">{ativ.preco}</p>
+                <p class="book-card-p">{ativ.editora}</p>
+                <p class="book-card-p">R$ {ativ.preco}</p>
                 <button onClick={() => apagar(ativ.id)}>Remover</button>
                 </div>
             </ul>)}
