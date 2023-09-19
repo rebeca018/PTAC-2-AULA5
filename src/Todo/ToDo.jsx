@@ -73,7 +73,7 @@ export default function ToDo() {
                 <input value={preco} type="text"
                 onChange={(e)=>{ setPreco(e.target.value)}} />
                 <br/>
-                <button>ADD</button>
+                <button class="btn btn-secondary">ADD</button>
             </form>
 
             {lista.map((ativ)=>
