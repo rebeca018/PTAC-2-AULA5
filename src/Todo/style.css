@@ -2,16 +2,23 @@
     background-color: #344960;
 }
 
-.home-tx{
+.texto{
     color: #C0A293;
 }
+
+.lista{
+    background-color: #344960;
+    text-align: center;
+}
+
 .book-card {
+    text-align: left;
     margin: 30px;
-    background-color: #868096;
-    border: 5px solid #868096;
+    background-color: #C0A293;
+    border: 5px solid #C0A293;
     display:inline-block;
     overflow: hidden;
-    height: 250px;
+    height: 300px;
     width: 250px;
     border-radius: 10px;
   
