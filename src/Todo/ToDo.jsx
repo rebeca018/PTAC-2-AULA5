@@ -47,7 +47,7 @@ export default function ToDo() {
         <div class="lista">
             
             <h1 class="texto">Lista de Livros</h1>
-            <h2>Voltar para <Link to="/">home</Link></h2>
+            <h2 class="texto">Voltar para <Link to="/">home</Link></h2>
         
             
 
@@ -79,7 +79,7 @@ export default function ToDo() {
             {lista.map((ativ)=>
             <ul key={ativ.id}>
                 <div class="book-card">
-                <img src="{ativ.imagem}" class="book-card-img"></img>
+                <img src={ativ.imagem} class="book-card-img"></img>
                 <p class="book-card-p">{ativ.titulo}</p>
                 <p class="book-card-p">{ativ.autor}</p>
                 <p class="book-card-p">{ativ.editora}</p>
