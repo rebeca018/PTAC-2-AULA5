@@ -5,11 +5,12 @@ export default function Home() {
     return (
         <div class="home">
             <img src="/imagem/capa.png" alt="" />
-            
+            <h3 class="texto-home">Bem-vindo(a) à minha biblioteca!</h3>
+            <h3 class="texto-home">Abaixo está um resumo dos meus livros favoritos </h3>
 
             <div class="home">
                 
-                <h3 class="texto-home">Bem-vindo(a) à minha biblioteca! Abaixo está um resumo dos meus livros favoritos e aqui está a minha <Link to="/todo">wishlist</Link>, a minha lista de livros.</h3>
+                
 
                 <div class="book-card-home">
                     <img src="https://m.media-amazon.com/images/I/71P-Mok4cqL._AC_UL320_.jpg" alt="" class="book-card-img"/>
@@ -33,6 +34,11 @@ export default function Home() {
                 </div>
 
             </div>
+
+            <div class="rodape">
+                <h3 class="texto-r">Aqui está a minha <Link to="/todo">wishlist</Link>, a minha lista de livros.</h3>
+            </div>
+            
            
         </div>
 

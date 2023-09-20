@@ -47,7 +47,7 @@ export default function ToDo() {
         <div class="lista">
             
             <h1 class="texto">Wishlist de Livros</h1>
-            <h2 class="texto">Voltar para <Link to="/">home</Link></h2>
+            <p class="texto">Voltar para <Link to="/">home</Link></p>
         
             
 
