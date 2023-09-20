@@ -19,7 +19,7 @@ export default function Home() {
                             <p class="card-p">Livro: Estilhaça-me</p> 
                             <p class="card-p">Autora: Thareh Mafi</p>
                             <p class="card-p">Editora: Universo dos livros</p>
-                            <p class="card-p">No eletrizante primeiro volume da série Estilhaça-me, Tahereh Mafi apresenta um mundo distópico hipnotizante, uma emocionante história de super-heróis e uma heroína inesquecível. Eu li essa série de livros em Janeiro de 2022, e se ornou um dos meus livros favoritos. Os meus personagens favoritos são a Juliette, o Aaron e o Kenji.</p>
+                            <p class="card-p">No eletrizante primeiro volume da série Estilhaça-me, Tahereh Mafi apresenta um mundo distópico hipnotizante, uma emocionante história de super-heróis e uma heroína inesquecível. Eu li essa série de livros em Janeiro de 2022, e se tornou um dos meus livros favoritos. Os meus personagens favoritos são a Juliette, o Aaron e o Kenji.</p>
                         </div>
                         
                     </div>
