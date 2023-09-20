@@ -8,7 +8,7 @@ export default function ToDo() {
    const [titulo, setTitulo] = useState("");
    const [autor, setAutor] = useState("");
    const [editora, setEditora] = useState("");
-   const [preco, setPreco] = useState("");
+   const [preco, setPreco] = useState(0);
    const [lista, setLista] = useState([]);
    const [id, setId] = useState(1);
 
@@ -27,7 +27,7 @@ export default function ToDo() {
         setTitulo("");
         setAutor("");
         setEditora("");
-        setPreco("");
+        setPreco(0);
    };
 
    const apagar = (id) => {
@@ -70,7 +70,7 @@ export default function ToDo() {
                 onChange={(e)=>{ setEditora(e.target.value)}} />
 
                 <p class="texto">Preço</p>
-                <input value={preco} type="text"
+                <input value={preco} type="number"
                 onChange={(e)=>{ setPreco(e.target.value)}} />
                 <br/>
                 <button class="btn btn-secondary botao">ADD</button>
@@ -81,8 +81,8 @@ export default function ToDo() {
                 <div class="book-card">
                 <img src={ativ.imagem} class="book-card-img"></img>
                 <p class="book-card-p">{ativ.titulo}</p>
-                <p class="book-card-p">{ativ.autor}</p>
-                <p class="book-card-p">{ativ.editora}</p>
+                <p class="book-card-p">Autor: {ativ.autor}</p>
+                <p class="book-card-p">Editora: {ativ.editora}</p>
                 <p class="book-card-p">R$ {ativ.preco}</p>
                 <img src="/imagem/trash.png" alt="" class="lixinho" onClick={() => apagar(ativ.id)} />
                 </div>

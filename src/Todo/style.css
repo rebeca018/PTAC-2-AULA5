@@ -26,6 +26,10 @@ body, html, #root{
     color: #C0A293;
 }
 
+.book{
+    display: flex;
+}
+
 .book-card-home {
     text-align: left;
     margin: 30px;
@@ -34,9 +38,37 @@ body, html, #root{
     display:inline-block;
     overflow: hidden;
     height: 340px;
-    width: 250px;
+    width: 550px;
     border-radius: 10px;
+    display: flex;
   
+}
+.card-a{
+    margin-top: 90px;
+    height: 156px;
+    width: 150px;
+    
+}
+
+.card-b{
+    height: 340px;
+    width: 430px;
+    
+}
+
+.card-p {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    margin: 0;
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;    
+    text-overflow: ellipsis;
+    color:black;
+    padding: 5px;
+    margin: 0;
+    font-size: 18px;
+    white-space: normal;
 }
 
 .lista{
@@ -58,7 +90,7 @@ input{
     border: 5px solid #C0A293;
     display:inline-block;
     overflow: hidden;
-    height: 340px;
+    height: 350px;
     width: 250px;
     border-radius: 10px;
   
@@ -103,7 +135,7 @@ input{
 
 .lixinho{
     max-width: 50px; 
-    max-height: 25px; 
+    max-height: 30px; 
     background-color: #344960;
     border-radius: 10px;
 }
