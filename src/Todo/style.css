@@ -84,7 +84,6 @@ input{
 }
 
 .book-card {
-    display: flex;
     text-align: left;
     margin: 30px;
     background-color: #C0A293;
@@ -94,7 +93,6 @@ input{
     height: 350px;
     width: 250px;
     border-radius: 10px;
-  
 }
 
   
@@ -129,10 +127,6 @@ input{
     color: #344960;
 }
 
-.botao-l{
-    background-color: #344960;
-    color: #C0A293;
-}
 
 .lixinho{
     max-width: 50px; 

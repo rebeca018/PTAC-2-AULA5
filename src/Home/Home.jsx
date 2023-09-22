@@ -3,12 +3,11 @@ import { Link } from "react-router-dom";
 export default function Home() {
    
     return (
-        <div class="home">
+        <div>
             <img src="/imagem/capa.png" alt="" />
             <h3 class="texto-home">Bem-vindo(a) à minha biblioteca!</h3>
             <h3 class="texto-home">Abaixo está um resumo dos meus livros favoritos </h3>
 
-            <div class="home">
                 
                 <div class="book">
 
@@ -51,7 +50,6 @@ export default function Home() {
 
                 </div>
 
-            </div>
 
             <div class="rodape">
                 <h3 class="texto-r">Aqui está a minha <Link to="/todo">wishlist</Link>, a minha lista de livros.</h3>
