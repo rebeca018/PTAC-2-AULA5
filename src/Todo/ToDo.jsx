@@ -86,7 +86,9 @@ export default function ToDo() {
             <ul key={ativ.id}>
                 <div class="book-card">
                 <img src={ativ.imagem} class="book-card-img"></img>
-                <p class="book-card-p">{ativ.titulo}</p>
+               <Link to={`/detalhe/${ativ.id}`}>
+                    <p class="book-card-p">{ativ.titulo}</p>
+               </Link>
                 <p class="book-card-p">Autor: {ativ.autor}</p>
                 <p class="book-card-p">Editora: {ativ.editora}</p>
                 <p class="book-card-p">R$ {ativ.preco}</p>
