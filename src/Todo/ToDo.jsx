@@ -5,13 +5,13 @@ import "./style.css";
 export default function ToDo() {
    //const [atividade, setAtividade] = useState("");
 
-   const listaLocalStorage = JSON.parse(localStorage.getItem("Lista"));
+   const listaLocalStorage = JSON.parse(localStorage.getItem("Lista")) || [];
    const [imagem, setImagem] = useState("")
    const [titulo, setTitulo] = useState("");
    const [autor, setAutor] = useState("");
    const [editora, setEditora] = useState("");
    const [preco, setPreco] = useState(0);
-   const [lista, setLista] = useState(listaLocalStorage || []);
+   const [lista, setLista] = useState(listaLocalStorage);
    const [id, setId] = useState(listaLocalStorage[listaLocalStorage.length - 1]?.id +1 || 1);
    //pegando o tamanho da lista menos 1 para pegar o id e somando 1 para arrumar o id
 
